@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension
+         point="org.eclipse.core.runtime.applications"
+         id="Remytt_modelEditorAdvisorApplication">
+      <!-- @generated remytt_model -->
+      <application>
+         <run class="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisor$Application"/>
+      </application>
+   </extension>
+
+   <extension point="org.eclipse.ui.perspectives">
+      <!-- @generated remytt_model -->
+      <perspective
+            name="%_UI_Perspective_label"
+            class="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisor$Perspective"
+            id="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisorPerspective">
+      </perspective>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands">
+      <!-- @generated remytt_model -->
+      <command
+            name="%_UI_Menu_OpenURI_label"
+            description="%_UI_Menu_OpenURI_description"
+            categoryId="org.eclipse.ui.category.file"
+            id="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisorOpenURICommand"/>
+      <command
+            name="%_UI_Menu_Open_label"
+            description="%_UI_Menu_Open_description"
+            categoryId="org.eclipse.ui.category.file"
+            id="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisorOpenCommand"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.bindings">
+      <!-- @generated remytt_model -->
+      <key
+            commandId="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisorOpenURICommand"
+            sequence="M1+U"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+      <key
+            commandId="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisorOpenCommand"
+            sequence="M1+O"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.actionSets">
+      <!-- @generated remytt_model -->
+      <actionSet
+            label="%_UI_Remytt_modelEditorAdvisor_ActionSet_label"
+            visible="true"
+            id="Remytt_modelEditorAdvisorActionSet">
+         <action
+               label="%_UI_Menu_About_label"
+               class="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisor$AboutAction"
+               menubarPath="help/additions"
+               id="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisorAboutAction"/>
+         <action
+               label="%_UI_Menu_Cook_label"
+               class="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisor$CookAction"
+               menubarPath="file/additions"
+               id="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisorCookAction"/>
+         <action
+               label="%_UI_Menu_OpenURI_label"
+               definitionId="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisorOpenURICommand"
+               class="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisor$OpenURIAction"
+               menubarPath="file/additions"
+               id="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisorOpenURIAction"/>
+         <action
+               label="%_UI_Menu_Open_label"
+               definitionId="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisorOpenCommand"
+               class="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisor$OpenAction"
+               menubarPath="file/additions"
+               id="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorAdvisorOpenAction"/>
+      </actionSet>
+   </extension>
+
+   <extension point="org.eclipse.ui.actionSets">
+      <!-- @generated remytt_model -->
+      <actionSet
+            label="%_UI_Remytt_modelModelWizard_ActionSet_label"
+            visible="true"
+            id="com.remyrobotics.remytt_model.presentation.Remytt_modelActionBarContributorActionSet">
+         <action
+               label="%_UI_Remytt_modelModelWizard_label"
+               class="com.remyrobotics.remytt_model.presentation.Remytt_modelActionBarContributor$NewAction"
+               menubarPath="file/new/additions"
+               id="com.remyrobotics.remytt_model.presentation.Remytt_modelActionBarContributorNewAction"/>
+      </actionSet>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated remytt_model -->
+      <editor
+            id="com.remyrobotics.remytt_model.presentation.Remytt_modelEditorID"
+            name="%_UI_Remytt_modelEditor_label"
+            icon="icons/full/obj16/Remytt_modelModelFile.gif"
+            extensions="remytt_model"
+            class="com.remyrobotics.remytt_model.presentation.Remytt_modelEditor"
+            contributorClass="com.remyrobotics.remytt_model.presentation.Remytt_modelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

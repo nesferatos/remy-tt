@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.remyrobotics:Kitchen xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.remyrobotics="http://www.remyrobotics.com/remytt_model">
+  <storage>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+    <boxes/>
+  </storage>
+  <ovenConveyors>
+    <input xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <input xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <input xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <input xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <input xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <input xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <output xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <output xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <output xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <output xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <output xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <output xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+  </ovenConveyors>
+  <ovenConveyors>
+    <input xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <input xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <input xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <input xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <input xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <input xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <output xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <output xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <output xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <output xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <output xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <output xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+    <baking xsi:type="com.remyrobotics:NoPizzaCrust"/>
+  </ovenConveyors>
+  <giverRobots name="giver 1">
+    <mozzarellaDispenser>
+      <mozzarella/>
+      <mozzarella/>
+    </mozzarellaDispenser>
+    <sauceDispenser>
+      <tomatoSauce/>
+      <tomatoSauce/>
+      <tomatoSauce/>
+    </sauceDispenser>
+  </giverRobots>
+  <giverRobots name="giver 2">
+    <mozzarellaDispenser>
+      <mozzarella/>
+      <mozzarella/>
+    </mozzarellaDispenser>
+    <sauceDispenser>
+      <tomatoSauce/>
+    </sauceDispenser>
+  </giverRobots>
+  <takerRobots name="taker 1">
+    <cutter/>
+  </takerRobots>
+  <takerRobots name="taker 2">
+    <cutter/>
+  </takerRobots>
+  <takerRobots name="taker 3">
+    <cutter/>
+  </takerRobots>
+  <workTable name="work table"/>
+  <waitTable name="wait table">
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#1">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#0">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#2">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#3">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#5">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#4">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#7">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#6">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#8">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#9">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#10">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#11">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#13">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#12">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#14">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#15">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#16">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#17">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#18">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#19">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#21">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#20">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#23">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#22">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#25">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#24">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#27">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#26">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#28">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#29">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#31">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#30">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#33">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#32">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+    <things xsi:type="com.remyrobotics:PizzaCrust" orderId="#34">
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:TomatoSauce"/>
+        <ingredient xsi:type="com.remyrobotics:Mozzarella"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Bake"/>
+      <processes xsi:type="com.remyrobotics:AddIngredient">
+        <ingredient xsi:type="com.remyrobotics:Box"/>
+      </processes>
+      <processes xsi:type="com.remyrobotics:Cut"/>
+    </things>
+  </waitTable>
+</com.remyrobotics:Kitchen>
